@@ -1,14 +1,43 @@
-#seleccion {
-    width: 20%;
-    margin: 20px 0px 30px 80px;
-}
-
+/* === PRODUCTOS === */
 #container-general {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    #ordenar-modal {
+        display: flex;
+        justify-content: space-around;
+
+        #seleccion {
+            width: 20%;
+            margin: 20px 0px 30px 80px;
+        }
+
+        .modal-carrito {
+            width: 15%;
+            align-self: center;
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
+
+        .table {
+            text-align: center;
+        }
+
+        #gastoTotal {
+            font-size: 1.2rem;
+        }
+
+        .modal-footer a {
+            text-decoration: none;
+            color: $blanco;
+        }
+    }
 
     #section-productos {
         width: 80%;
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -16,17 +45,15 @@
 
 
         .card-product {
-            width: 30%;
-            margin: 20px;
+            margin: 20px 0px;
             text-align: center;
 
 
             .img-container {
-                overflow: hidden;
                 position: relative;
 
                 img {
-                    width: 100%;
+                    width: 20em;
                     height: 50%;
                     margin: 10px;
                 }
@@ -36,32 +63,6 @@
             .info-producto {
                 display: flex;
                 flex-direction: column;
-            }
-        }
-    }
-
-    #section-carrito {
-        width: 30%;
-        height: 30%;
-        margin: 30px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        background-color: $lavanda;
-        border-radius: 10px;
-        position: sticky;
-        top: 200px;
-
-
-        div {
-            display: flex;
-            justify-content: center;
-            margin: 10px;
-
-            h2,
-            h3 {
-                font-size: 25px;
             }
         }
     }
